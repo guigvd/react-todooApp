@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    margin: auto;
+    background-color: #171720;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    width: 320px;
+    display: flex;
+}
+
+form input[type="text"] {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #61DAFB;
+    border: none;
+    height: 20px;
+    width: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    color: #111;
+    cursor: pointer;
+}
+
+div.task {
+    background-color: rgb(100, 100, 100);
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity .3s linear;
+}
+
+div.checkbox i {
+    font-size: 1rem;
+    color: #61DAFB;
+    margin-left: 6px;
+}
+
+div.task.done {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+div.task span {
+    flex-grow: 1;
+}
+
+div.task input {
+    padding: 0px;
+    outline: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trash {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.trash i {
+    color: rgb(200, 0, 0);
+    font-size: 1rem;
+}
